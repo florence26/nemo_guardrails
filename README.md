@@ -48,7 +48,7 @@ These stages involve establishing a set of rules or validators that the model ad
 
 ## NeMo Guardrails
 **NeMo Guardrails** offers a structured framework for implementing guardrails effectively. With this framework, we can achieve several essential use cases:
-![Image Alt text](/images/examples.png "NeMo Guardrails Examples"))
+![Image Alt text](/images/examples.png "NeMo Guardrails Examples")
 - **Topic Alignment:** Ensure that the language model stays on topic. For example, in a customer support chatbot, if a user asks for legal advice, NeMo Guardrails can steer the conversation back to the company's products and services.
 
 - **Predefined Responses:** Route frequently asked questions to predefined answers, streamlining response generation and eliminating the risk of model hallucination.
@@ -60,7 +60,7 @@ NeMo Guardrails empower us to create safer and more controlled conversational AI
 ### Technical Concepts
 NeMo Guardrails offer considerable flexibility, providing precise control over various aspects, including user inputs and Language Model (LLM) outputs.
 
-![Image Alt text](/images/technicalconcepts.png "NeMo Guardrails Technical Concepts"))
+![Image Alt text](/images/technicalconcepts.png "NeMo Guardrails Technical Concepts")
 
 **Constructing 'Rails' or 'Flows'**
 At its core, NeMo Guardrails are designed to establish 'rails' or 'flows' within conversational systems. These pathways offer clear directives to the language model, preventing it from wandering into undesirable topics while seamlessly integrating with other services.
@@ -86,7 +86,7 @@ At runtime, NeMo Guardrails employ an embedding model to encapsulate both user i
 
 All user and bot messages, along with their associated examples, are encoded into this vector database.
 
-![Image Alt text](/images/runtime.png "NeMo Guardrails Runtime Example"))
+![Image Alt text](/images/runtime.png "NeMo Guardrails Runtime Example")
 
 1. **Prompt:** When a user initiates a message, the initial step captures the user's intent. This is achieved by encoding the message into the vector space. The model then assesses its similarity to predefined canonical forms, identifying the most relevant canonical form that explains the user's intent.
 
