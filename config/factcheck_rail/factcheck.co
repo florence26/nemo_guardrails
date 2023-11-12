@@ -1,0 +1,16 @@
+define user ask about report
+  "How is the world happiness report measured?"
+  "Which countries were ranked the happiest in 2022?"
+  "What chapters were in the 2016 world happiness report?"
+  "Which country was ranked the least happy in 2021?"
+
+define flow answer report question
+  user ask about report
+  bot provide report answer
+  $accurate = execute check_facts
+  if not $accurate
+    bot remove last message
+    bot inform answer unknown
+
+define bot remove last message
+  "(remove last message)"
