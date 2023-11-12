@@ -1,0 +1,15 @@
+define flow
+  bot ...
+  $is_blocked = execute block_list(file_name="block_list.txt")
+  if $is_blocked
+    bot remove last message
+    bot inform unethical
+
+define bot remove last message
+  "(remove last message)"
+
+define bot inform blocked
+  "Output blocked. I won't answer this question."
+
+define bot inform unethical
+  "Output is unethical. I won't answer this question."
